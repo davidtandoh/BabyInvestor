@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/ticker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ticker"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:fontFamily="sans-serif-light"
+                android:layout_below="@+id/ticker"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutWeight"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/layoutAmount">
+                <!--                android:layout_marginRight="10dp"-->
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="perCh"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"/>
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/layoutAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentRight="true">
+
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:text="amount"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    />
+            </FrameLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
